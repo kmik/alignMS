@@ -1,0 +1,34 @@
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0000SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0000SET/001/;/media/koomikko/LaCie/tila_2020/Altum/0000SET/002/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0000SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/1/
+
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0001SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0001SET/001/;/media/koomikko/LaCie/tila_2020/Altum/0001SET/002/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0001SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/2/
+
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0002SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0002SET/001/;/media/koomikko/LaCie/tila_2020/Altum/0002SET/002/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0002SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/3/
+
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0003SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0003SET/001/;/media/koomikko/LaCie/tila_2020/Altum/0003SET/002/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0003SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/4/
+
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0004SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0004SET/001/;/media/koomikko/LaCie/tila_2020/Altum/0004SET/002/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0004SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/5/
+
+./bin/Debug/altumAlign -i "/media/koomikko/LaCie/tila_2020/Altum/0005SET/000/;/media/koomikko/LaCie/tila_2020/Altum/0005SET/001/" -r -f 12345
+mv /media/koomikko/LaCie/tila_2020/Altum/0005SET/000/aligned/*_MULTI.tif /media/koomikko/LaCie/tila_2020/Altum/all_img/6/
+
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|______________________________
+
+
+
+9NI01zk$p+{m
