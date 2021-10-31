@@ -429,7 +429,7 @@ bool altumImage::alignImages(int format, std::vector<int> compositeOrder, int cr
 */
     }
 
-    //If we want to output composite image
+    //If we want to output composite image or not
     if(compositeOrder.size() > 1){
 
        // std::cout << "HERE " << std::endl;
