@@ -1672,3 +1672,105 @@ Channel 5 irradiances:
 -- Sun Oct 31 18:10:50 2021
 
 -- Sun Oct 31 18:10:50 2021
+
+-- Mon Nov  1 14:57:05 2021
+	Input dir          : test_full/
+	Output dir         : test_full/aligned_3/
+	Number of images : 9
+	Reference band   : NiR
+	Reflectance mode : Panel
+	Output format    : Reflectance
+	Panels found     : 2
+	Panel reflectances:
+	0.534	0.535	0.533	0.529	0.532	
+	0.534	0.535	0.533	0.529	0.532	
+	Panel reflectance sd (percentage point). >3.0 is suspicious:
+	1.008	0.954	0.977	0.997	1.02	
+	0.959	0.985	0.95	0.957	1.057	
+	Panel correction factors (should be roughly the same for all):
+	4.011	3.693	4.165	5.999	5.036	
+	3.9	3.603	4.091	5.96	4.991	
+	Panel timestamps, should be ascending order:
+	1594963071
+	1594963468
+	
+	Processed images : 7
+Channel 1 irradiances:
+
+0.864	|                               
+	|     -                         
+	|*                              
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+0.374	|                              *
+	|_______________________________
+
+Channel 2 irradiances:
+
+0.826	|                               
+	|     -                         
+	|*                              
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+0.34	|                              *
+	|_______________________________
+
+Channel 3 irradiances:
+
+0.752	|                               
+	|*    -                         
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+0.308	|                              *
+	|_______________________________
+
+Channel 4 irradiances:
+
+0.431	|                               
+	|*    -                         
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+0.173	|                              *
+	|_______________________________
+
+Channel 5 irradiances:
+
+0.504	|                               
+	|*    -                         
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+	|                               
+0.216	|                              *
+	|_______________________________
+
+	Finished Mon Nov  1 14:57:45 2021
+
+######################################### 
+-- Mon Nov  1 14:57:05 2021

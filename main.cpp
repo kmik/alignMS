@@ -849,7 +849,7 @@ int main(int argc, char** argv)
     ExifTool *et = new ExifTool(exftool.c_str());
 
     std::string exftool2 = pahi;
-    exftool2 += "/exifTool2/exiftool";
+    exftool2 += "/exifTool/exiftool";
     ExifTool *et2 = new ExifTool(exftool2.c_str());
 
     blocking_queue<metaItem> *q = new blocking_queue<metaItem>(1000);
@@ -1535,6 +1535,7 @@ int main(int argc, char** argv)
             continue;
 
         }
+
 
         if(ai->calibrationPanel){
 
