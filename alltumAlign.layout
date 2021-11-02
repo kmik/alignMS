@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveTarget name="Debug" />
-	<File name="src/metadata_reader.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="359" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1668" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/ExifTool.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6820" topLine="113" />
-		</Cursor>
-	</File>
+	<ActiveTarget name="Release" />
 	<File name="src/exif.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2852" topLine="64" />
-		</Cursor>
-	</File>
-	<File name="include/queue.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1412" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/calibrationPanels.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,9 +12,14 @@
 			<Cursor1 position="5779" topLine="209" />
 		</Cursor>
 	</File>
-	<File name="src/altumImage.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src/metadata_reader.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="14593" topLine="417" />
+			<Cursor1 position="359" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/queue.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1412" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include/ExifTool.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -47,19 +32,34 @@
 			<Cursor1 position="18413" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="src/ExifTool.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6820" topLine="113" />
+		</Cursor>
+	</File>
 	<File name="src/calibrationPanels.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="358" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include/progress.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="601" topLine="6" />
+			<Cursor1 position="29586" topLine="995" />
+		</Cursor>
+	</File>
+	<File name="src/altumImage.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14593" topLine="417" />
 		</Cursor>
 	</File>
 	<File name="include/metadata_reader.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1618" topLine="68" />
+		</Cursor>
+	</File>
+	<File name="include/progress.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="601" topLine="6" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

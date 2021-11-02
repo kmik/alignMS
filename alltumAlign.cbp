@@ -43,9 +43,25 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-s" />
+					<Add option="-march=corei7" />
+					<Add option="-fopenmp" />
 					<Add directory="include" />
+					<Add directory="/usr/local/include/opencv4" />
 				</Compiler>
+				<Linker>
+					<Add option="-Wl,-Bstatic -lboost_system -Wl,-Bdynamic" />
+					<Add option="-Wl,-Bstatic -lboost_program_options -Wl,-Bdynamic" />
+					<Add option="-lboost_filesystem" />
+					<Add option="-lboost_system" />
+					<Add option="-fopenmp" />
+					<Add option="-lopencv_core -lopencv_imgproc -lopencv_highgui" />
+					<Add option="-lopencv_objdetect" />
+					<Add option="-lopencv_calib3d" />
+					<Add option="-lopencv_features2d" />
+					<Add option="-lopencv_xfeatures2d" />
+					<Add option="-lopencv_imgproc" />
+					<Add option="-lopencv_imgcodecs" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>

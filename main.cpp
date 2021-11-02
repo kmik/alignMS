@@ -322,6 +322,7 @@ void printHelp(){
 
     std::cout << " -i [ --images ] <String>\tImage directory" << std::endl;
     std::cout << " -p [ --panel ]  <String>\tCalibration panel " << std::endl;
+    std::cout << " -e [ --exifToolPath ]  <String>\tPath to exifTool " << std::endl;
 
     std::cout << " " << std::endl;
     std::cout << "-- Optional arguments -- default value in parenthesis ()\n" << std::endl;
@@ -846,16 +847,6 @@ int main(int argc, char** argv)
 
     std::string exftool = pahi;
     exftool += "/exifTool/exiftool";
-    ExifTool *et = new ExifTool(exftool.c_str());
-
-    std::string exftool2 = pahi;
-    exftool2 += "/exifTool/exiftool";
-    ExifTool *et2 = new ExifTool(exftool2.c_str());
-
-    blocking_queue<metaItem> *q = new blocking_queue<metaItem>(1000);
-
-    std::thread th1(metadataWriterThread, q, et2, exftool2);
-    metadata_reader *meta = new metadata_reader();
 
 
     std::ifstream panel_id_file;
@@ -863,6 +854,8 @@ int main(int argc, char** argv)
     int n_cores = 4;
 
     bool undisti = false;
+
+    std::string exifTool_path;
 
 
     po::options_description desc("Option arguments");
@@ -875,6 +868,7 @@ int main(int argc, char** argv)
       ("undistort,u", "Undistort images")
       ("trim,t", po::value<int>(), "Crop black edges (%)")
       ("panel,p", po::value<std::string>(), "Panel reflectance values")
+      ("exifToolPath,e", po::value<std::string>(), "Path to exiftool")
       ("mode,m", po::value<int>(), "Panel reflectance values")
       ("reflectance,r", "Output reflectance")
       ("both,b", "Output reflectance and RAW")
@@ -923,6 +917,12 @@ int main(int argc, char** argv)
                 division *= 10;
 
             }
+
+        }
+
+        if ( vm.count("exifToolPath")) {
+
+            exifTool_path = vm["exifToolPath"].as<std::string>();
 
         }
 
@@ -988,13 +988,37 @@ int main(int argc, char** argv)
 
     }
 
-
-
     catch(po::error& e){
       std::cerr << "ERROR: " << e.what() << std::endl << std::endl;
       printHelp();
       return ERROR_IN_COMMAND_LINE;
     }
+
+
+    exifTool_path = "/home/koomikko/Documents/exifTool/exiftool";
+
+    if(exifTool_path.empty()){
+        std::cout << "PLEASE SPECIFY EXIFTOOL PATH!" << std::endl;
+        exit(1);
+
+    }
+
+
+    exftool = exifTool_path;
+
+    ExifTool *et = new ExifTool(exifTool_path.c_str());
+
+    //std::string exftool2 = pahi;
+    //exftool2 += "/exifTool/exiftool";
+    ExifTool *et2 = new ExifTool(exifTool_path.c_str());
+
+
+    blocking_queue<metaItem> *q = new blocking_queue<metaItem>(1000);
+
+    std::thread th1(metadataWriterThread, q, et2, exifTool_path);
+    metadata_reader *meta = new metadata_reader();
+
+
 
     std::cout << compositeBandOrder.size() << std::endl;
 
