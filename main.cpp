@@ -1,4 +1,4 @@
-#include <opencv4/opencv2/core.hpp>
+//#include <opencv4/opencv2/core.hpp>
 
 #include <opencv2/highgui.hpp>
 
@@ -35,8 +35,6 @@
 #include <thread>
 
 const int META_N_img = 20;
-
-
 
 std::ofstream log_file;
 std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
@@ -86,10 +84,7 @@ bool metadataWriterThread(blocking_queue<metaItem> *q, ExifTool *et2, std::strin
 
         commandi = "";
         outputFile = "";
-/*
-        if(job_done && q->empty())
-            break;
-*/
+
         if(q->empty() ){
 
             if(job_done)
@@ -997,7 +992,7 @@ int main(int argc, char** argv)
     }
 
 
-    exifTool_path = "/home/koomikko/Documents/exifTool/exiftool";
+    //exifTool_path = "/home/koomikko/Documents/exifTool/exiftool";
 
     if(exifTool_path.empty()){
         std::cout << "PLEASE SPECIFY EXIFTOOL PATH!" << std::endl;
