@@ -502,6 +502,8 @@ void readPanelImageIds(std::unordered_set<std::string> &id_set, std::string file
 
 }
 
+
+
 void drawPlot(std::map<long, plotItem> plot_map){
 
     long minTime = LONG_MAX, maxTime = LONG_MIN;
@@ -1002,6 +1004,10 @@ int main(int argc, char** argv)
         exit(1);
 
     }
+
+
+
+
 
 
     exftool = exifTool_path;
