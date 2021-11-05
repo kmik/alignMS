@@ -1000,11 +1000,6 @@ int main(int argc, char** argv)
 
     }
 
-
-
-
-
-
     exftool = exifTool_path;
 
     ExifTool *et = new ExifTool(exifTool_path.c_str());
