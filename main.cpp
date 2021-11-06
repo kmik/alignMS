@@ -794,8 +794,6 @@ int main(int argc, char** argv)
     log_file.open("loger.txt", std::ios_base::app);
     auto start = std::chrono::system_clock::now();
 
-    //std::string curTime = date::format("%F %T", std::chrono::system_clock::now());
-
     std::time_t start_time = std::chrono::system_clock::to_time_t(start);
 
     log_file << "\n-- " << std::ctime(&start_time);
