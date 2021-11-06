@@ -104,3 +104,11 @@ in their own directories (named "REFL" and "RAW"). --trim will crop the fused
 images with the input percentage. Given --trim 5 will remove image pixels 
 5% or closer to the edge of the image.  
 
+
+
+| Header A       | Header B       |
+| -------------- | -------------- |
+| row 1 col 1    | row 1 col 2    |
+| row 2 column 1 | row 2 column 2 |
+
+
