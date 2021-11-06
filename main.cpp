@@ -302,7 +302,7 @@ bool metadataWriterThread(blocking_queue<metaItem> *q, ExifTool *et2, std::strin
 void printHelp(){
 
     std::cout << "\nAltumAlign 0.1.0" << std::endl;
-    std::cout << "Mikko Kukkonen <mikko.kukkonen@uef.fi>\n" << std::endl;
+    std::cout << "Mikko Kukkonen <mikko.kukkonen@luke.fi>\n" << std::endl;
     std::cout << "  ##########################################" << std::endl;
     std::cout << "  -  This tool is used to align MicaSense  -" << std::endl;
     std::cout << "  -   Altum images from separate channels  -" << std::endl;
