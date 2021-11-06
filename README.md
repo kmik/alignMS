@@ -106,9 +106,8 @@ images with the input percentage. Given --trim 5 will remove image pixels
 
 
 
-| Header A       | Header B       |
-| -------------- | -------------- |
-| row 1 col 1    | row 1 col 2    |
-| row 2 column 1 | row 2 column 2 |
+label 1 | label 2
+--- | ---
+![](/home/koomikko/Documents/codes/cplus/altumAlign/alltumAlign/test_full/IMG_0007_1.tif) | ![](/home/koomikko/Documents/codes/cplus/altumAlign/alltumAlign/test_full/IMG_0007_2.tif)
 
 
