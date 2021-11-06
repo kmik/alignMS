@@ -326,7 +326,6 @@ void printHelp(){
     std::cout << " -d [ --def_panel ]   <String>\tPanel image id file " << std::endl;
     std::cout << " -f [ --fuse ]        <String>\tMerge the result " << std::endl;
     std::cout << " -c [ --cores ]       <Integer>\tNumber of CPU threads used (6) " << std::endl;
-    std::cout << " -t [ --trim ]        <Integer>\tCrop black edges (0 - 100) " << std::endl;
     std::cout << " -r [ --reflectance ] <None>\tOutput reflectance " << std::endl;
     std::cout << " -b [ --both ]        <None>\tOutput reflectance and RAW " << std::endl;
     std::cout << " -m [ --mode ]        <Integer>\tReflectance mode (1) " << std::endl;
