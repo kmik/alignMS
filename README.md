@@ -105,9 +105,14 @@ images with the input percentage. Given --trim 5 will remove image pixels
 5% or closer to the edge of the image.  
 
 
+--panel defines the location of the panel file, i.e. the file where panel
+reflectances of each band is present in their own lines.
+The file is formatted as follows:
 
-label 1 | label 2
---- | ---
-![](/home/koomikko/Documents/codes/cplus/altumAlign/alltumAlign/test_full/IMG_0007_1.tif) | ![](/home/koomikko/Documents/codes/cplus/altumAlign/alltumAlign/test_full/IMG_0007_2.tif)
+	0.534
+	0.535
+	0.533
+	0.529
+	0.532
 
-
+Where the band order, line by line, is: blue, green, red, NiR, red-edge
