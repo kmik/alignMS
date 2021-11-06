@@ -54,6 +54,9 @@ The tool is run by calling the script file alignMS.sh with appropriate arguments
 All images that are to be processed need to be located in the same directory (-i). This also includes the optional reflectance calibration panel images 
 (detected automatically). The code outputs images in "aligned" directory that is created in the input directory. If such directory exists, "_1", "_2" ... 
 will be appended to "aligned". The -f flag dictates the band ordering in the merged image file. If -f is not present, no merged file will be output.
+All output images are undistorted with the calibration information found in the metadata. IMPORTANT: Currently this calibration information is not
+overwritten in the output metadata. So if any software uses this metadata information it will receive garbage, as the images are already 
+undistorted. All metadata information is copied to the fused image from the image corresponding to the --source flag.
 
 A help can be output with -h flag:
 
@@ -115,4 +118,4 @@ The file is formatted as follows:
 	0.529
 	0.532
 
-Where the band order, line by line, is: blue, green, red, NiR, red-edge
+Where the band order, line by line, is: blue, green, red, NiR, red-edge.
