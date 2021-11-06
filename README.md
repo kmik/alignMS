@@ -93,4 +93,14 @@ A help can be output with -h flag:
 		                  	   4 = Red Edge
 	
 	
+--source indicates which channel is going to be used as a reference, i.e.
+the image from this channel is fixed and all other channels are translated
+to this image plane. --mode means how the reflectance values are computed.
+Adaptive is not yet implemented!
+
+--reflectance means that the output is only reflectance images, --both
+means the output will contain both reflectance images and original images
+in their own directories (named "REFL" and "RAW"). --trim will crop the fused
+images with the input percentage. Given --trim 5 will remove image pixels 
+5% or closer to the edge of the image.  
 
