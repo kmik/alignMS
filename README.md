@@ -4,9 +4,18 @@ This tool can be used to co-align multispectral camera bands and convert the DN 
 images). The original purpose of this tool was to  process multispectral images for various research endeavours related to remote sensing assisted forest 
 inventories. The code is still  developed and maintained with this intention. At this time, only Micasense Altum camera is supported.  
 
+OpenCV, boost, openmp and exiftool are required to run the program.
+
+OpenCV needs to be build from source and installed with extra_modules and ENABLE_NONFREE (this in a noncommerial software). Below a brief instruction:
+
+	
+
+
 The tool is run by calling the script file alignMS.sh with appropriate arguments. E.g.
 
 	./alignMS.sh --exifToolPath /path/to/exifTool/exiftool -i test_full/ -f 12345 -r
 	
 	
-
+All images that are to be processed need to be located in the same directory (-i). This also includes the optional reflectance calibration panel images 
+(detected automatically). The code outputs images in "aligned" directory that is created in the input directory. If such directory exists, "_1", "_2" ... 
+will be appended to "aligned".
