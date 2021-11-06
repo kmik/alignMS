@@ -58,7 +58,7 @@ All output images are undistorted with the calibration information found in the 
 overwritten in the output metadata. So if any software uses this metadata information it will receive garbage, as the images are already 
 undistorted. All metadata information is copied to the fused image from the image corresponding to the --source flag.
 
-A help can be output with -h flag:
+Brief instructions can be output with -h flag:
 
 	./alignMS.sh -h
 	

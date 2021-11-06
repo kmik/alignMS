@@ -1169,7 +1169,6 @@ void altumImage::readImages(bool undisti){
 
         if(undisti){
             cv::Mat undistort_orig = channels[j].clone(), undistort_8bit = channels_8bit[j].clone(), undistort_quantizedReflectance = channels_quantizedReflectance[j].clone();
-
             cv::undistort(undistort_orig, channels[j], cameraMatrix[j], distortion[j]);
             cv::undistort(undistort_8bit, channels_8bit[j], cameraMatrix[j], distortion[j]);
             cv::undistort(undistort_quantizedReflectance, channels_quantizedReflectance[j], cameraMatrix[j], distortion[j]);
